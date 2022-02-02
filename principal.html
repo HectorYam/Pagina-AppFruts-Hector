@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="ins">
+    <p>Para escuchar dicha traducción seleccione una de las siguientes opciones:</p>
+        </div>
+            <div style="text-align: center"; id="header">
+                    <input type="button" value="Español" style='width:90px; height:25px' onclick="reproducir_audio(0)">               
+                    <input type="button" value="Ingles" style='width:90px; height:25px' onclick="reproducir_audio(1)">                
+                    <input type="button" value="Maya" style='width:90px; height:25px' onclick="reproducir_audio(2)">
+            </div>
+
+            <div id="contenido">
+                    <img src="./img/cereza.png" alt="Cereza" id="img_presentando"  srcset="" style='width:260px; height:260px; text-align:center'>
+                    <div id="alerta">
+                        <p id="nombre_fruta">Cereza</p>
+                    </div>
+            </div>
+    
+            <div id="footer" style="text-align: center";>
+                <input type="button" value="Salir" style='width:90px; height:25px' onclick="window.close();">
+                <input type="button" id="prev" value="Atras" onclick="prev();" style='width:90px; height:25px'>
+                <input type="button" value="Siguiente" id="next" onclick="next();" style='width:90px; height:25px'>
+               
+            </div>
+    <script src="./Js/JavaScript.js"></script>
+</body>
+</html>
